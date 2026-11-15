@@ -39,6 +39,23 @@ All results and screenshots from both modules are documented in a formal Penetra
 ## ✅Completed Modules
 
 - 🌐 **W2-PM4:** theHarvester Footprinting Attacks 
-- 📶 **W2-PM5:** Zenmap Network Scanning (Ping, ARP and Nmap Host Discovery)
+- 📶 **W2-PM5:** Zenmap Network Scanning (Ping, ARP and Nmap Host Discovery 
 
-[Click here to view my Week 2 Penetration Testing Report (PDF)](NETWORKWALKS-DAMILARE-ODESANMI-B084-WK2-PM4-PM5-PENETRATION-TESTING.pdf)a
+# Cybersecurity Week 2: Penetration Testing, Footprinting and Network Scanning
+
+**Name:** Odesanmi Damilare
+**Program/Batch:** B084-Networkwalks
+**Date:** 14 November 2026
+**Modules:** W2-PM1 (Multiple Kali Tools) | W2-PM5 (Zenmap Scanning)
+
+## 📄 My Full Report (PDF)
+
+[Click here to view my Week 2 Penetration Testing Report (PDF)](W2-PM-FINAL_-_Report_v2.pdf)
+
+## What I Did
+- Footprinting on networkwalks.com using WHOIS, whatweb, nslookup, curl, wafw00f, dnsrecon
+- Network scanning on my own local LAN using Zenmap
+- All activities done with written permission / on my own network only
+
+## Disclaimer
+This report is for education and research purposes only. Do not use it to break the law.
