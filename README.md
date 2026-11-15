@@ -40,12 +40,5 @@ All results and screenshots from both modules are documented in a formal Penetra
 
 - 🌐 **W2-PM4:** theHarvester Footprinting Attacks 
 - 📶 **W2-PM5:** Zenmap Network Scanning (Ping, ARP and Nmap Host Discovery)
-- 📄 **W2-PM-FINAL:** Penetration Testing Report
 
-**Full Report W2-PM-FINAL:📄** [Penetration Testing Report](<W2-PM-FINAL Penetration-Testing-Report.pdf>)
-
-
----
-# NETWORKWALKS-Odesanmi-Damilare-B084-WK2-PM4-PM5
--PENETRATION-TESTING
 
