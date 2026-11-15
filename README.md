@@ -90,8 +90,6 @@ Possible uses of the lab include:
 1. Open **`theHarvester`**: Launch **`theHarvester`** in Kali Linux from the applications menu located in the top left side of the screen.
 2. Review Usage Instructions: Check the tool's commonly used commands and supported data sources to verify the syntax before running the scan.
 
-  ![Image 1](<Usage Guidlines.png>)
-*Figure 1: Review*
 
 
 3. Run the Baidu Search: Execute the following command in the terminal to search for email IDs and subdomains related to **`microsoft.com`** (which is the target domain) using Baidu with a result limit of 1000:
@@ -100,10 +98,7 @@ Possible uses of the lab include:
 
 4. Review and Save Output: Take the screenshot of the given output and save the results into a text file.
 
-Below is the screenshot for the Baidu Search:
 
-![Image 2](<Task 1 Search with Baidu.png>)
-*Figure 2: Baidu Search*
 #### Task 2: Broad Search Using All Sources
 
 1. Open a New Terminal: Launch a fresh terminal window in Kali Linux.
@@ -112,12 +107,6 @@ Below is the screenshot for the Baidu Search:
 > theHarvester -d microsoft.com -l 50 -b all
 
 3. Review and Save Output: Take the screenshot of the given different sources and save the results into a text file.
-
-Below is the prime(main) screenshot for the All Sources Search:
-
-
-![Image 3](<Task 2 All Sources Search.png>)
-*Figure 3: All Sources Search*
 
 ---
 
@@ -132,32 +121,15 @@ Below is the prime(main) screenshot for the All Sources Search:
 
 2. Find Local IP Address and LAN Subnet: Open Windows Command Prompt (cmd) and run **`ipconfig`** to find the local IP address and local LAN subnet. Make sure to use the active adapter that has the default gateway value.
 
-![Image 4](Task2.png)
-*Figure 4: Ipconfig Settings*
-
-
 3. Run a Ping Scan for Live Hosts: Open Zenmap, enter the local LAN subnet into the **`Target`** field, use the dropdown to select **`Ping Scan`** in the profile field, and click **`Scan`** to discover active hosts on the network.
 
 4. Count the Live Hosts: Review the scan results in the left sidebar and main output window to count the total number of live hosts detected on the subnet (including the local Windows PC).
 
 5. Record Live Host IP Addresses: Note the IP address of every active host discovered during the ping scan.
 
-![Image 5](Task3.png)
-*Figure 5: Target Ping Scan Results*
-
-
-6. Record Live Host MAC Addresses: Collect the MAC addresses listed for the discovered hosts in the Zenmap output, and run **`ipconfig /all`** in Command Prompt to find the local Windows PC's physical MAC address.
-
-
-
-![Image 6](Task6_.png)
-*Figure 6: Ipconfig /all Settings with Local MAC Address*
+6. Record Live Host MAC Addresses: Collect the MAC addresses listed for the discovered hosts in the Zenmap output, and run **`ipconfig /all`** in Command Prompt to find the local Windows PC's physical 
 
 7. Display and Save the Network Topology: Switch to the **`Topology`** tab in Zenmap, turn on the **`legend`** to review the visual symbols, click **`Save Graphic`**, and export the topology map in **`PDF`** format to the laptop/computer.
-
-![Image 7](<Saved Topology with Legend.png>)
-*Figure 7: Topology Results with Legend*
-
 
 ---
 
