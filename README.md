@@ -104,3 +104,85 @@ Below is the screenshot for the Baidu Search:
 
 ![Image 2](<Task 1 Search with Baidu.png>)
 *Figure 2: Baidu Search*
+#### Task 2: Broad Search Using All Sources
+
+1. Open a New Terminal: Launch a fresh terminal window in Kali Linux.
+2. Run the Multi-Source Search: Execute the following command to gather email IDs and subdomains for **`microsoft.com`** across all supported public sources with a result limit of 50:
+
+> theHarvester -d microsoft.com -l 50 -b all
+
+3. Review and Save Output: Take the screenshot of the given different sources and save the results into a text file.
+
+Below is the prime(main) screenshot for the All Sources Search:
+
+
+![Image 3](<Task 2 All Sources Search.png>)
+*Figure 3: All Sources Search*
+
+---
+
+
+
+ ### Module 📶- W2-PM5: Zenmap Network Scanning
+ 
+
+### Steps In Order:
+
+1. Download and Install Zenmap: Download the Windows installer from the official Nmap website and complete the installation of Zenmap.
+
+2. Find Local IP Address and LAN Subnet: Open Windows Command Prompt (cmd) and run **`ipconfig`** to find the local IP address and local LAN subnet. Make sure to use the active adapter that has the default gateway value.
+
+![Image 4](Task2.png)
+*Figure 4: Ipconfig Settings*
+
+
+3. Run a Ping Scan for Live Hosts: Open Zenmap, enter the local LAN subnet into the **`Target`** field, use the dropdown to select **`Ping Scan`** in the profile field, and click **`Scan`** to discover active hosts on the network.
+
+4. Count the Live Hosts: Review the scan results in the left sidebar and main output window to count the total number of live hosts detected on the subnet (including the local Windows PC).
+
+5. Record Live Host IP Addresses: Note the IP address of every active host discovered during the ping scan.
+
+![Image 5](Task3.png)
+*Figure 5: Target Ping Scan Results*
+
+
+6. Record Live Host MAC Addresses: Collect the MAC addresses listed for the discovered hosts in the Zenmap output, and run **`ipconfig /all`** in Command Prompt to find the local Windows PC's physical MAC address.
+
+
+
+![Image 6](Task6_.png)
+*Figure 6: Ipconfig /all Settings with Local MAC Address*
+
+7. Display and Save the Network Topology: Switch to the **`Topology`** tab in Zenmap, turn on the **`legend`** to review the visual symbols, click **`Save Graphic`**, and export the topology map in **`PDF`** format to the laptop/computer.
+
+![Image 7](<Saved Topology with Legend.png>)
+*Figure 7: Topology Results with Legend*
+
+
+---
+
+
+# 💡 What I Learned
+
+The most important concepts I learned from this project involved passive reconnaissance and active network scanning, as follows:
+
+### 1. Understanding How Different OSINT Sources Affect `theHarvester` Results
+
+When running `theHarvester` against `microsoft.com`, I learned that different data sources return very different results depending on how they index public information and whether they require API keys. Searching only Baidu (`-b baidu`) returned zero results( Zero for IPs, Emails, Hosts), while searching across all sources (`-b all`) pulled subdomains and host records from open sources even though several restricted modules displayed missing API key notices. This showed me why checking multiple public sources gives a much clearer picture during passive reconnaissance.
+
+### 2. Identifying the Correct Active Network Adapter Before Scanning
+
+When checking `ipconfig` on Windows, I initially noticed I was using the wrong adapter. The `Ethernet 3` (`192.168.56.1`) is VirtualBox's virtual Host-Only adapter. Because it has no Default Gateway and is not connected to my physical network, scanning `192.168.56.0/24` only shows my own PC rather than the actual devices on my local network. By checking for the adapter with a Default Gateway (`Wireless LAN adapter Wi-Fi` at `192.168.1.66`), I identified the real LAN subnet (`192.168.1.0/24`), which allowed Zenmap to properly discover my router and all 6 live hosts on the network.
+
+---
+
+
+# 🔗 Tools & Resources
+
+- **Zenmap:** [https://nmap.org/download.html](https://nmap.org/download.html)
+- **VirtualBox:** [https://virtualbox.org/wiki/Downloads](https://virtualbox.org/wiki/Downloads)
+- **Kali Linux:** [https://kali.org/get-kali](https://kali.org/get-kali)
+
+---
+
+
